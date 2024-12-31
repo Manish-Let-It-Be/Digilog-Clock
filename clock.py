@@ -31,6 +31,9 @@ class DigilogClock(tk.Tk):
         self.canvas.create_oval(20, 20, 380, 380)  
         self.canvas.create_oval(25, 25, 375, 375, outline='black', width=2) 
 
+        # Center dot
+        self.canvas.create_oval(195, 195, 205, 205, fill='black')  
+
         # Hands in layering order
         self.draw_hand(second_angle, 125, f"{seconds:01} ", 10, fill='red')  
         self.draw_hand(minute_angle, 115, f"{minutes:01} ", 15)  
