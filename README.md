@@ -9,8 +9,16 @@ Digilog Clock is made using Python with Tkinter that shows the time in which han
 - **Real-Time Update**: The clock updates every second to reflect the current time.
 
 ## Visual
+### Python App
+
 <a href="https://github.com/Manish-Let-It-Be/Digilog-Clock">
     <img src="Clock.gif" alt="Clock gif" height="450">
+</a>
+
+### Web App
+
+<a href="https://github.com/Manish-Let-It-Be/Digilog-Clock">
+    <img src="digilog.gif" alt="Clock gif" height="390">
 </a>
 
 ## Installation
