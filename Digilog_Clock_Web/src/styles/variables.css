@@ -1,0 +1,17 @@
+:root {
+  --primary-color: #2b3d4f;
+  --secondary-color: #3498db;
+  --background-color: #b0cbe6;
+  --text-color: #2c3e50;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --hover-color: #2980b9;
+  
+  --title-font: 'Inter', system-ui, -apple-system, sans-serif;
+  --content-font: system-ui, -apple-system, sans-serif;
+  
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+  
+  --transition-speed: 0.3s;
+}

@@ -1,0 +1,78 @@
+@import './src/styles/variables.css';
+@import './src/styles/animations.css';
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--background-color);
+  font-family: var(--content-font);
+  color: var(--text-color);
+}
+
+.title {
+  font-family: var(--title-font);
+  font-size: 2.5rem;
+  margin: var(--spacing-lg) 0;
+  color: var(--primary-color);
+  transition: transform var(--transition-speed);
+}
+
+.title:hover {
+  transform: translateY(-2px);
+}
+
+.container {
+  background: white;
+  border-radius: 50%;
+  padding: var(--spacing-md);
+  box-shadow: 0 0 20px var(--shadow-color);
+  margin: var(--spacing-md) 0;
+}
+
+canvas {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.github-link {
+  margin: var(--spacing-lg) 0;
+  padding: var(--spacing-md) var(--spacing-lg);
+  background-color: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  transition: all var(--transition-speed);
+}
+
+.github-link:hover {
+  background-color: var(--hover-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px var(--shadow-color);
+}
+
+.github-link:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px var(--shadow-color);
+}
+
+.github-icon {
+  width: 24px;
+  height: 24px;
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: var(--spacing-sm);
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
+}
