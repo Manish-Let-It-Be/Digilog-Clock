@@ -40,17 +40,17 @@ class DigilogClock {
     const center = this.center;
     const radius = this.radius;
 
-    // Clear canvas
+   
     ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
 
-    // Draw clock face
+    // Clock Face
     ctx.beginPath();
     ctx.arc(center, center, radius, 0, 2 * Math.PI);
     ctx.strokeStyle = 'black';
     ctx.lineWidth = 2;
     ctx.stroke();
 
-    // Draw hour marks
+    // Hour marks
     for (let i = 0; i < 12; i++) {
       const angle = (i * 30 - 90) * Math.PI / 180;
       const innerRadius = radius * 0.85;
@@ -70,23 +70,23 @@ class DigilogClock {
       ctx.stroke();
     }
 
-    // Get current time
+    
     const now = new Date();
     const hours = now.getHours() % 12;
     const minutes = now.getMinutes();
     const seconds = now.getSeconds();
 
-    // Calculate angles
+    // Angles
     const hourAngle = (360 / 12) * (hours + minutes / 60);
     const minuteAngle = (360 / 60) * (minutes + seconds / 60);
     const secondAngle = (360 / 60) * seconds;
 
-    // Draw hands
+    // Hands
     this.drawHand(secondAngle, radius * 0.7, `${seconds}`, radius * 0.05, 'red');
     this.drawHand(minuteAngle, radius * 0.6, `${minutes}`, radius * 0.07);
     this.drawHand(hourAngle, radius * 0.5, `${hours}`, radius * 0.09);
 
-    // Draw center dot
+    // Dot
     ctx.beginPath();
     ctx.arc(center, center, 5, 0, 2 * Math.PI);
     ctx.fillStyle = 'black';
@@ -99,6 +99,6 @@ class DigilogClock {
   }
 }
 
-// Initialize the clock
+// Initializing
 const canvas = document.getElementById('clockCanvas');
 new DigilogClock(canvas);
