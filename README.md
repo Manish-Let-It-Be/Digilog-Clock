@@ -35,7 +35,7 @@ To run the Digilog Clock application, follow these steps:
    ```
 4. Navigate to the project directory:
    ```bash
-   cd Digilog-Clock
+   cd Digilog-Clock 
    ```
 
 ## Usage
